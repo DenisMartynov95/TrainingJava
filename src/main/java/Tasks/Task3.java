@@ -36,4 +36,34 @@ public class Task3 {
         } while (true);
     }
 
+    public void checkEven() {
+        System.out.println("Введите число: ");
+        int x = scanner.nextInt();
+        if (x % 2 == 0) {
+            System.out.println("Введенное число четное ");
+        } else {
+            System.out.println("Введенное число нечетное ");
+        }
+    }
+
+    public void compareNumbers() {
+        System.out.println("Введите 1 число: ");
+        int x = scanner.nextInt();
+        System.out.println("Введите 2 число: ");
+        int y = scanner.nextInt();
+        System.out.println("Введите 3 число: ");
+        int z = scanner.nextInt();
+
+        int sum = x + y;
+
+        if (sum > z) {
+            System.out.println("Сумма двух введенных чисел больше третьего числа");
+        } else if (sum ==  z) {
+            System.out.println("Сумма двух введенных чисел равна третьему числу");
+
+        } else {
+            System.out.println("Сумма двух введенных чисел меньше третьего числа");
+        }
+    }
+
 }

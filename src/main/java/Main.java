@@ -40,7 +40,9 @@ public class Main {
 //        task2.getNumber();
         Task3 task3 = new Task3();
 //        task3.checkNumbers();
-        task3.checkLastNumber();
+//        task3.checkLastNumber();
+//          task3.checkEven();
+        task3.compareNumbers();
     }
 
 }
