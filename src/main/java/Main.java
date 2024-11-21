@@ -1,6 +1,7 @@
 import Arrays.Arrays;
 import Arrays.Arrays2;
 import Tasks.Task2;
+import Tasks.Task3;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,9 +36,10 @@ public class Main {
 //        person.CreatePerson();
 //        person.celebrateBirthday();
 
-        Task2 task2 = new Task2();
-        task2.getNumber();
-
+//        Task2 task2 = new Task2();
+//        task2.getNumber();
+        Task3 task3 = new Task3();
+        task3.checkNumbers();
     }
 
 }
