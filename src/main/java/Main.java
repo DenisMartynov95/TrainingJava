@@ -39,7 +39,8 @@ public class Main {
 //        Task2 task2 = new Task2();
 //        task2.getNumber();
         Task3 task3 = new Task3();
-        task3.checkNumbers();
+//        task3.checkNumbers();
+        task3.checkLastNumber();
     }
 
 }
