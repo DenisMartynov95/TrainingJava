@@ -79,4 +79,16 @@ public class Task3 {
         }
     }
 
+    public void printSpeedWarning(int currentSpeed) {
+        int speedLimit = 51;
+        if (currentSpeed >=speedLimit) {
+            System.out.println("Штраф");
+        } else if (currentSpeed <= 0) {
+            System.out.println("Вы ввели некорректное число");
+        }
+        System.out.println("Не будет штрафа");
+    }
+
+
+
 }

@@ -43,7 +43,9 @@ public class Main {
 //        task3.checkLastNumber();
 //          task3.checkEven();
 //        task3.compareNumbers();
-        task3.isPositive();
+//        task3.isPositive();
+//        task3.printSpeedWarning(50);
+
     }
 
 }
