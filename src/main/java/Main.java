@@ -42,7 +42,8 @@ public class Main {
 //        task3.checkNumbers();
 //        task3.checkLastNumber();
 //          task3.checkEven();
-        task3.compareNumbers();
+//        task3.compareNumbers();
+        task3.isPositive();
     }
 
 }
