@@ -69,7 +69,6 @@ public class Task3 {
     public void isPositive() {
         System.out.println("Введите любое число: ");
         int number = scanner.nextInt();
-        if (number)
 
         if (number > 0) {
             System.out.println("Число положительное");
