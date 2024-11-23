@@ -163,8 +163,11 @@ public class FoodPack {
 
     // Вывод выбранных продуктов
     public void getChosenFood() {
-
-       System.out.println("Вы выбрали:" + nameGeneralFood + " - " + nameSubFood);
+        if (chosenNumberGeneralFood <= 0) {
+            System.out.println("Сначала выберите Главный продукт!");
+        } else {
+            System.out.println("Вы выбрали:" + nameGeneralFood + " - " + nameSubFood);
+        }
     }
 }
 
