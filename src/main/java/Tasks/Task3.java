@@ -94,7 +94,15 @@ public class Task3 {
         } else {
             System.out.println("Не будет штрафа");
         }
+    }
 
-
+    public String processTrafficLightSignal(String color) {
+        if (color.equals("зеленый")) {
+            return "Можно ехать!";
+        } else if (color.equals("желтый") || color.equals("красный")) {
+            return "Стой!";
+        } else {
+            return "Некорректный ответ";
+        }
     }
 }

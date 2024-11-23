@@ -44,7 +44,7 @@ public class Main {
 //          task3.checkEven();
 //        task3.compareNumbers();
 //        task3.isPositive();
-        task3.printSpeedWarning(70);
+//        task3.printSpeedWarning(91);
 
     }
 
