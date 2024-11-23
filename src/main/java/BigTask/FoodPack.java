@@ -91,69 +91,93 @@ public class FoodPack {
             System.out.println(generalFoodPack[2]);
         } else {
             System.out.println("Число было введенно некорректно - введите новое!");
+            scanner.next(); // Очистка ввода
         }
         System.out.println(" ");
     }
 
     // Метод для выбора Подпродукта, основываясь на выбранном раннее Главном продукте
     public void choseSubFood() {
-        System.out.println("Выберите подпродукт из двух вариантов: ");
-
-        int number = chosenNumberGeneralFood; // Используем уже выбранный общий продукт
-        if (number == 1) {
-            System.out.println("1 - " + subFoodPack.get(1));
-            System.out.println("2 - " + subFoodPack.get(2));
-        } else if (number == 2) {
-            System.out.println("1 - " + subFoodPack.get(3));
-            System.out.println("2 - " + subFoodPack.get(4));
-        } else if (number == 3) {
-            System.out.println("1 - " + subFoodPack.get(5));
-            System.out.println("2 - " + subFoodPack.get(6));
-        } else {
-            System.out.println("Ошибка! Общий продукт не выбран.");
-            return;
-        }
-
-        System.out.println("Введите 1 или 2: ");
-        int choseSubFood = scanner.nextInt();
-
-        if (number == 1) {
-            if (choseSubFood == 1) {
-                System.out.println("Вы выбрали: " + subFoodPack.get(1));
-                nameSubFood = subFoodPack.get(1);
-            } else if (choseSubFood == 2) {
-                System.out.println("Вы выбрали: " + subFoodPack.get(2));
-                nameSubFood = subFoodPack.get(2);
-            } else {
-                System.out.println("Некорректный выбор!");
+        try {
+            // Проверяем, был ли выбран главный продукт
+            if (chosenNumberGeneralFood <= 0 || chosenNumberGeneralFood > generalFoodPack.length) {
+                throw new IllegalStateException("Ошибка! Сначала выберите главный продукт.");
             }
-        } else if (number == 2) {
-            if (choseSubFood == 1) {
-                System.out.println("Вы выбрали: " + subFoodPack.get(3));
-                nameSubFood = subFoodPack.get(3);
-            } else if (choseSubFood == 2) {
-                System.out.println("Вы выбрали: " + subFoodPack.get(4));
-                nameSubFood = subFoodPack.get(4);
-            } else {
-                System.out.println("Некорректный выбор!");
+
+            System.out.println("Выберите подпродукт из двух вариантов:");
+
+            int number = chosenNumberGeneralFood; // Используем уже выбранный общий продукт
+            if (number == 1) {
+                System.out.println("1 - " + subFoodPack.get(1));
+                System.out.println("2 - " + subFoodPack.get(2));
+            } else if (number == 2) {
+                System.out.println("1 - " + subFoodPack.get(3));
+                System.out.println("2 - " + subFoodPack.get(4));
+            } else if (number == 3) {
+                System.out.println("1 - " + subFoodPack.get(5));
+                System.out.println("2 - " + subFoodPack.get(6));
             }
-        } else if (number == 3) {
-            if (choseSubFood == 1) {
-                System.out.println("Вы выбрали: " + subFoodPack.get(5));
-                nameSubFood = subFoodPack.get(5);
-            } else if (choseSubFood == 2) {
-                System.out.println("Вы выбрали: " + subFoodPack.get(6));
-                nameSubFood = subFoodPack.get(6);
-            } else {
-                System.out.println("Некорректный выбор!");
+
+            System.out.println("Введите 1 или 2: ");
+            int choseSubFood = scanner.nextInt();
+
+            if (number == 1) {
+                if (choseSubFood == 1) {
+                    System.out.println("Вы выбрали: " + subFoodPack.get(1));
+                    nameSubFood = subFoodPack.get(1);
+                } else if (choseSubFood == 2) {
+                    System.out.println("Вы выбрали: " + subFoodPack.get(2));
+                    nameSubFood = subFoodPack.get(2);
+                } else {
+                    throw new IllegalArgumentException("Некорректный выбор!");
+                }
+            } else if (number == 2) {
+                if (choseSubFood == 1) {
+                    System.out.println("Вы выбрали: " + subFoodPack.get(3));
+                    nameSubFood = subFoodPack.get(3);
+                } else if (choseSubFood == 2) {
+                    System.out.println("Вы выбрали: " + subFoodPack.get(4));
+                    nameSubFood = subFoodPack.get(4);
+                } else {
+                    throw new IllegalArgumentException("Некорректный выбор!");
+                }
+            } else if (number == 3) {
+                if (choseSubFood == 1) {
+                    System.out.println("Вы выбрали: " + subFoodPack.get(5));
+                    nameSubFood = subFoodPack.get(5);
+                } else if (choseSubFood == 2) {
+                    System.out.println("Вы выбрали: " + subFoodPack.get(6));
+                    nameSubFood = subFoodPack.get(6);
+                } else {
+                    throw new IllegalArgumentException("Некорректный выбор!");
+                }
             }
+        } catch (IllegalStateException | IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Произошла ошибка! Убедитесь, что вводите корректные данные.");
+            scanner.next(); // Очистил ввод, чтобы избежать зацикливания
         }
         System.out.println(" ");
     }
 
     // Вывод выбранных продуктов
     public void getChosenFood() {
-        System.out.println("Вы выбрали:" + nameGeneralFood + " - " + nameSubFood);
+        boolean generalFoodFlag = false;
+        boolean subFoodFlag = false;
+        if (nameGeneralFood == null) {
+            generalFoodFlag = true;
+            System.out.println("Простите, но вы выбрали некорректный товар, выберите заново!");
+            System.out.println("Вы ошиблись в выборе главного продукта");
+        } else if (nameSubFood == null) {
+            subFoodFlag = true;
+            System.out.println("Простите, но вы выбрали некорректный товар, выберите заново!");
+            System.out.println("Вы ошиблись в выборе  подпродукта");
+        } else if (nameGeneralFood == null && nameSubFood == null) {
+            System.out.println("Простите, но вы выбрали некорректный товар, выберите заново!");
+        } else {
+            System.out.println("Вы выбрали:" + nameGeneralFood + " - " + nameSubFood);
+        }
     }
 
 }
