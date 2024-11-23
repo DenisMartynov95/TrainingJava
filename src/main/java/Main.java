@@ -53,6 +53,7 @@ public class Main {
         foodPack.printSubFoodPack();
         foodPack.choseFoodPack();
         foodPack.choseSubFood();
+        foodPack.getChosenFood();
     }
 
 }
