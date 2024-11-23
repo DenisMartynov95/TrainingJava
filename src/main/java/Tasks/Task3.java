@@ -58,7 +58,7 @@ public class Task3 {
 
         if (sum > z) {
             System.out.println("Сумма двух введенных чисел больше третьего числа");
-        } else if (sum ==  z) {
+        } else if (sum == z) {
             System.out.println("Сумма двух введенных чисел равна третьему числу");
 
         } else {
@@ -81,14 +81,20 @@ public class Task3 {
 
     public void printSpeedWarning(int currentSpeed) {
         int speedLimit = 51;
-        if (currentSpeed >=speedLimit) {
-            System.out.println("Штраф");
-        } else if (currentSpeed <= 0) {
-            System.out.println("Вы ввели некорректное число");
+        int overSpeed = currentSpeed - speedLimit;
+
+        if (overSpeed >= 20 && overSpeed <= 40) {
+            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 500 рублей!");
+        } else if (overSpeed >= 40 && overSpeed <= 60) {
+            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 1000 рублей!");
+        } else if (overSpeed >= 60 && overSpeed <= 80) {
+            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 2000 рублей!");
+        } else if (overSpeed >= 80) {
+            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 5000 рублей! + Лишение прав!");
+        } else {
+            System.out.println("Не будет штрафа");
         }
-        System.out.println("Не будет штрафа");
+
+
     }
-
-
-
 }
