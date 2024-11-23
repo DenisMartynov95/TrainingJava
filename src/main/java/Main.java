@@ -1,5 +1,6 @@
 import Arrays.Arrays;
 import Arrays.Arrays2;
+import BigTask.FoodPack;
 import Tasks.Task2;
 import Tasks.Task3;
 
@@ -38,14 +39,20 @@ public class Main {
 
 //        Task2 task2 = new Task2();
 //        task2.getNumber();
-        Task3 task3 = new Task3();
+//        Task3 task3 = new Task3();
 //        task3.checkNumbers();
 //        task3.checkLastNumber();
 //          task3.checkEven();
 //        task3.compareNumbers();
 //        task3.isPositive();
 //        task3.printSpeedWarning(91);
+//        task3.processTrafficLightSignal();
 
+        FoodPack foodPack = new FoodPack();
+        foodPack.printFoodPack();
+        foodPack.printSubFoodPack();
+        foodPack.choseFoodPack();
+        foodPack.choseSubFood();
     }
 
 }
