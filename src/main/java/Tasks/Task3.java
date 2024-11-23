@@ -80,17 +80,17 @@ public class Task3 {
     }
 
     public void printSpeedWarning(int currentSpeed) {
-        int speedLimit = 51;
+        int speedLimit = 50;
         int overSpeed = currentSpeed - speedLimit;
 
-        if (overSpeed >= 0 && overSpeed <= 20) {
-            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 500 рублей!");
+        if (overSpeed >= 1 && overSpeed <= 20) {
+            System.out.println("Вы превысили скорость на " + overSpeed + " может прийти штраф 500 рублей!");
         } else if (overSpeed >= 20 && overSpeed <= 40) {
-            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 1000 рублей!");
+            System.out.println("Вы превысили скорость на " + overSpeed + " может прийти штраф 1000 рублей!");
         } else if (overSpeed >= 40 && overSpeed <= 60) {
-            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 2000 рублей!");
+            System.out.println("Вы превысили скорость на " + overSpeed + " может прийти штраф 2000 рублей!");
         } else if (overSpeed >= 80) {
-            System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 5000 рублей! + Лишение прав!");
+            System.out.println("Вы превысили скорость на " + overSpeed + " может прийти штраф 5000 рублей! + Лишение прав!");
         } else {
             System.out.println("Не будет штрафа");
         }
