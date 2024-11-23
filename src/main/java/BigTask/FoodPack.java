@@ -163,22 +163,9 @@ public class FoodPack {
 
     // Вывод выбранных продуктов
     public void getChosenFood() {
-        boolean generalFoodFlag = false;
-        boolean subFoodFlag = false;
-        if (nameGeneralFood == null) {
-            generalFoodFlag = true;
-            System.out.println("Простите, но вы выбрали некорректный товар, выберите заново!");
-            System.out.println("Вы ошиблись в выборе главного продукта");
-        } else if (nameSubFood == null) {
-            subFoodFlag = true;
-            System.out.println("Простите, но вы выбрали некорректный товар, выберите заново!");
-            System.out.println("Вы ошиблись в выборе  подпродукта");
-        } else if (nameGeneralFood == null && nameSubFood == null) {
-            System.out.println("Простите, но вы выбрали некорректный товар, выберите заново!");
-        } else {
-            System.out.println("Вы выбрали:" + nameGeneralFood + " - " + nameSubFood);
-        }
-    }
 
+       System.out.println("Вы выбрали:" + nameGeneralFood + " - " + nameSubFood);
+    }
 }
+
 
