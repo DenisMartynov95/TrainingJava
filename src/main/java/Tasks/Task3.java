@@ -83,11 +83,11 @@ public class Task3 {
         int speedLimit = 51;
         int overSpeed = currentSpeed - speedLimit;
 
-        if (overSpeed >= 20 && overSpeed <= 40) {
+        if (overSpeed >= 0 && overSpeed <= 20) {
             System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 500 рублей!");
-        } else if (overSpeed >= 40 && overSpeed <= 60) {
+        } else if (overSpeed >= 20 && overSpeed <= 40) {
             System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 1000 рублей!");
-        } else if (overSpeed >= 60 && overSpeed <= 80) {
+        } else if (overSpeed >= 40 && overSpeed <= 60) {
             System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 2000 рублей!");
         } else if (overSpeed >= 80) {
             System.out.println("Вы превысили скорость на " + overSpeed + "может прийти штраф 5000 рублей! + Лишение прав!");
