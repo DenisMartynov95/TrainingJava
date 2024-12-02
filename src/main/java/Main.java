@@ -1,6 +1,7 @@
 import Arrays.Arrays;
 import Arrays.Arrays2;
 import BigTask.FoodPack;
+import Tasks.Books;
 import Tasks.Task2;
 import Tasks.Task3;
 
@@ -48,12 +49,16 @@ public class Main {
 //        task3.printSpeedWarning(91);
 //        task3.processTrafficLightSignal();
 
-        FoodPack foodPack = new FoodPack();
-        foodPack.printFoodPack();
-        foodPack.printSubFoodPack();
-        foodPack.choseFoodPack();
-        foodPack.choseSubFood();
-        foodPack.getChosenFood();
-    }
+//        FoodPack foodPack = new FoodPack();
+//        foodPack.printFoodPack();
+//        foodPack.printSubFoodPack();
+//        foodPack.choseFoodPack();
+//        foodPack.choseSubFood();
+//        foodPack.getChosenFood();
 
+        Books books = new Books("Денис", "Как стать автоматизатором", 365.65);
+        System.out.println(books.giveABook());
+
+
+    }
 }
