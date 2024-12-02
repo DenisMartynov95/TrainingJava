@@ -59,6 +59,10 @@ public class Main {
         Books books = new Books("Денис", "Как стать автоматизатором", 365.65);
         System.out.println(books.giveABook());
 
+        books.setAuthor("Денис Мартынов");
+        books.setPrice(999.99);
+        System.out.println(books.giveABook());
+
 
     }
 }
