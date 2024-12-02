@@ -63,6 +63,7 @@ public class Main {
         books.setPrice(999.99);
         System.out.println(books.giveABook());
 
+        books.createBook();
 
     }
 }

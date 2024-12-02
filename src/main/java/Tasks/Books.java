@@ -1,6 +1,10 @@
 package Tasks;
 
+import java.util.Scanner;
+
 public class Books {
+
+    Scanner scanner = new Scanner(System.in);
 
     private String author;
     private String title;
@@ -35,6 +39,26 @@ public class Books {
         this.author = author;
         this.title = title;
         this.price = price;
+    }
+
+    public void createBook() {
+
+        System.out.println("Введите автора: ");
+        setAuthor(scanner.next());
+        if (getAuthor().matches(".*\\d.*") && !getAuthor().isEmpty()) {
+            System.out.println("Имя не должно содержать цифры!");
+        } else {
+            System.out.println("Введено имя: " + getAuthor());
+
+            System.out.println("Введите название книги: ");
+            setTitle(scanner.next());
+
+            System.out.println("Введите цену книги: ");
+            setPrice(scanner.nextDouble());
+            System.out.println("Cоздана книга со следующими параметрами: " + getAuthor() + " " + getTitle()+ " " + getPrice());
+        }
+
+
     }
 
     public String giveABook() {
