@@ -2,6 +2,7 @@ import Arrays.Arrays;
 import Arrays.Arrays2;
 import BigTask.FoodPack;
 import Tasks.Books;
+import Tasks.Product;
 import Tasks.Task2;
 import Tasks.Task3;
 
@@ -56,14 +57,21 @@ public class Main {
 //        foodPack.choseSubFood();
 //        foodPack.getChosenFood();
 
-        Books books = new Books("Денис", "Как стать автоматизатором", 365.65);
-        System.out.println(books.giveABook());
+//        Books books = new Books("Денис", "Как стать автоматизатором", 365.65);
+//        System.out.println(books.giveABook());
+//
+//        books.setAuthor("Денис Мартынов");
+//        books.setPrice(999.99);
+//        System.out.println(books.giveABook());
+//
+//        books.createBook();
 
-        books.setAuthor("Денис Мартынов");
-        books.setPrice(999.99);
-        System.out.println(books.giveABook());
+        Product product = new Product("Мыло","Хозтовары", 5,28.99);
+        System.out.println(product.printProductInfo());
 
-        books.createBook();
+        product.setQuantity(10);
+        product.setPricePerUnit(39.99);
+        System.out.println(product.printProductInfo());
 
     }
 }
