@@ -1,6 +1,9 @@
 import Arrays.Arrays;
 import Arrays.Arrays2;
 import BigTask.FoodPack;
+import BigTask2.Programmer;
+import BigTask2.Teacher;
+import BigTask2.Worker;
 import Tasks.Books;
 import Tasks.Product;
 import Tasks.Task2;
@@ -66,12 +69,22 @@ public class Main {
 //
 //        books.createBook();
 
-        Product product = new Product("Мыло","Хозтовары", 5,28.99);
-        System.out.println(product.printProductInfo());
+//        Product product = new Product("Мыло","Хозтовары", 5,28.99);
+//        System.out.println(product.printProductInfo());
+//
+//        product.setQuantity(10);
+//        product.setPricePerUnit(39.99);
+//        System.out.println(product.printProductInfo());
 
-        product.setQuantity(10);
-        product.setPricePerUnit(39.99);
-        System.out.println(product.printProductInfo());
+        Worker[] workers = new Worker[2];
+        workers[0] = new Programmer();
+        workers[1] = new Teacher();
+
+        for (Worker worker : workers) {
+            worker.work();
+            System.out.println(worker.getSalary());
+
+        }
 
     }
 }
