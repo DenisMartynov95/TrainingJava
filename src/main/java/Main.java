@@ -90,7 +90,8 @@ public class Main {
         SeasonsClass seasonsClass = new SeasonsClass();
         seasonsClass.printMonths();
         seasonsClass.printTotalNumbers();
-        seasonsClass.changeToLowCase();
+//        seasonsClass.changeToLowCase();
+        seasonsClass.changeToLowerCase();
 
     }
 }

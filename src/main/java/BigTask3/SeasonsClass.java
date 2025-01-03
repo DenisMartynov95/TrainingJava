@@ -28,7 +28,15 @@ public class SeasonsClass {
 
     // Вторая реализация предыдущего метода
     public void changeToLowerCase() {
-        String[] newNameForMonths = new String[11];
+        String[] newNameForMonths = new String[12];
+        String monthName;
+
+        for (Months month : Months.values()) {
+            monthName = month.name();
+            newNameForMonths[0] = monthName;
+        }
+        System.out.println(Arrays.toString(newNameForMonths));
+
 
     }
 
