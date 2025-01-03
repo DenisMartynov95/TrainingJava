@@ -18,6 +18,7 @@ public class SeasonsClass {
         System.out.println("Количество найденных месяцев: " + totalCounts);
     }
 
+    // Первая реализация метода
     public void changeToLowCase() {
         String monthsName = "";
         for (int i = 1; i != Months.values().length; i++) {
@@ -26,14 +27,17 @@ public class SeasonsClass {
         System.out.println(monthsName.toLowerCase());
     }
 
-    // Вторая реализация предыдущего метода
+    // Вторая реализация предыдущего метода при помощи создания массива и заполнения его значениями из enum
     public void changeToLowerCase() {
-        String[] newNameForMonths = new String[12];
+        // Создаем массив размером = количеству элементов в enum
+        String[] newNameForMonths = new String[Months.values().length];
         String monthName;
-
+        // Так как используется Foreach - создаю переменную для отсчета i, чтобы можно было оперировать итерациями
+        int i = 0;
+        // Ну и создаю переменную month и помещаю в нее строки из enum-класса, а затем помещаю эти строки в массив
         for (Months month : Months.values()) {
-            monthName = month.name();
-            newNameForMonths[0] = monthName;
+            newNameForMonths[i] = month.name();
+            i++;
         }
         System.out.println(Arrays.toString(newNameForMonths));
 
