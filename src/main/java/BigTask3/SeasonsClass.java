@@ -36,12 +36,16 @@ public class SeasonsClass {
         int i = 0;
         // Ну и создаю переменную month и помещаю в нее строки из enum-класса, а затем помещаю эти строки в массив
         for (Months month : Months.values()) {
-            newNameForMonths[i] = month.name();
+            newNameForMonths[i] = month.name().toLowerCase();
             i++;
         }
         System.out.println(Arrays.toString(newNameForMonths));
-
-
     }
+
+    // Методы для использований моих кастомных методов из класса Enum
+    public void printListOfEnumClass() {
+        System.out.println(Months.asList());
+    }
+
 
 }

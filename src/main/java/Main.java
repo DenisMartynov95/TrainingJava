@@ -92,6 +92,7 @@ public class Main {
         seasonsClass.printTotalNumbers();
 //        seasonsClass.changeToLowCase();
         seasonsClass.changeToLowerCase();
+        seasonsClass.printListOfEnumClass();
 
     }
 }
