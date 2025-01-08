@@ -1,6 +1,8 @@
 package BigTask3;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class SeasonsClass {
 
@@ -45,6 +47,12 @@ public class SeasonsClass {
     // Методы для использований моих кастомных методов из класса Enum
     public void printListOfEnumClass() {
         System.out.println(Months.asList());
+    }
+
+    // Метод который меняет на lowcase только через созданный в енам-классе метод
+    public void changeToLowerCaseListEnum() {
+        String months = Months.asList().toString();
+        System.out.println(months.toLowerCase());
     }
 
 
