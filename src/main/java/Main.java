@@ -86,8 +86,11 @@ public class Main {
 //        seasonsClass.changeToLowerCaseListEnum();
 
         Strings strings = new Strings();
-        strings.countStrSymbols();
-        strings.isStringEmpty();
-        strings.task1();
+//        strings.countStrSymbols();
+//        strings.isStringEmpty();
+//        strings.trimSpaces();
+
+//        strings.task1();
+          strings.task2();
     }
 }

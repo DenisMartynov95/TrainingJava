@@ -40,6 +40,12 @@ public class Strings {
         }
     }
 
+    //Удаляю пробелы вначале строки
+    public void trimSpaces() {
+        fillInput();
+        System.out.println(getInput().trim());
+    }
+
     /*
             Задачи для закрепления
                                         */
@@ -58,6 +64,23 @@ public class Strings {
         }
     }
 
+    //Тебе нужно проверить, содержит ли переданная в параметр метода строка пробелы в начале или в конце. Для этого:
+    //создай строку без пробелов в начале и в конце: нужно удалить пробелы в начале и конце у исходной строки,
+    //сравни две строки.
+    public void task2() {
+        String str = "          test                   ";
+        String assertString = "test";
+
+        String afterTrimmer = str.trim();
+
+        if (afterTrimmer.equals(assertString)) {
+            System.out.println("Строки эквиваленты: " + afterTrimmer + "=" + assertString);
+        } else {
+            System.out.println("Строки неравны: " + afterTrimmer + "!=" + assertString);
+        }
+
+
+    }
 
 
 
