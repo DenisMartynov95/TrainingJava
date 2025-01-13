@@ -1,11 +1,4 @@
-import Arrays.Arrays;
-import Arrays.Arrays2;
-import BigTask.FoodPack;
-import BigTask2.Programmer;
-import BigTask2.Teacher;
-import BigTask2.Worker;
-import BigTask3.SeasonsClass;
-import Tasks.*;
+import Strings.Strings;
 
 public class Main {
     public static void main(String[] args) {
@@ -94,6 +87,6 @@ public class Main {
 
         Strings strings = new Strings();
         strings.countStrSymbols();
-
+        strings.isStringEmpty();
     }
 }
