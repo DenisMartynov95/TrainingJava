@@ -89,8 +89,11 @@ public class Main {
 //        strings.countStrSymbols();
 //        strings.isStringEmpty();
 //        strings.trimSpaces();
+//        strings.setUpperCase();
+//        strings.setLowCase();
 
 //        strings.task1();
-          strings.task2();
+//          strings.task2();
+        strings.task3();
     }
 }

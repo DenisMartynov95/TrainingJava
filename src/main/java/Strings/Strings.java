@@ -46,6 +46,20 @@ public class Strings {
         System.out.println(getInput().trim());
     }
 
+    // Изменяю регистр на low
+    public void setLowCase() {
+        fillInput();
+        System.out.println(getInput().toLowerCase());
+    }
+
+    // Изменяю регистр на upper
+    public void setUpperCase() {
+        fillInput();
+        System.out.println(getInput().toUpperCase());
+    }
+
+
+
     /*
             Задачи для закрепления
                                         */
@@ -64,12 +78,16 @@ public class Strings {
         }
     }
 
-    //Тебе нужно проверить, содержит ли переданная в параметр метода строка пробелы в начале или в конце. Для этого:
+    //Тебе нужно проверить, содержит ли переданная строка пробелы в начале или в конце. Для этого:
     //создай строку без пробелов в начале и в конце: нужно удалить пробелы в начале и конце у исходной строки,
     //сравни две строки.
     public void task2() {
         String str = "          test                   ";
         String assertString = "test";
+
+        if (str.startsWith(" ") && str.endsWith(" ")) {
+            System.out.println("Тестовая строка содержит пробелы! Буду триммирить ее");
+        }
 
         String afterTrimmer = str.trim();
 
@@ -78,11 +96,25 @@ public class Strings {
         } else {
             System.out.println("Строки неравны: " + afterTrimmer + "!=" + assertString);
         }
-
-
     }
 
+    //Методу передают строку. Тебе нужно проверить, содержит ли строка символы:
+    //только верхнего регистра — верни «Строка в верхнем регистре»,
+    //только нижнего регистра — верни «Строка в нижнем регистре»,
+    //разные регистры — верни «Строка с разными регистрами».
+    public void task3() {
+        fillInput();
+        String isUpperCase = getInput().toUpperCase();
+        String isLowerCase = getInput().toLowerCase();
 
+        if (getInput().equals(isUpperCase)) {
+            System.out.println("Строка в верхнем регистре");
+        } else if (getInput().equals(isLowerCase)) {
+            System.out.println("Строка в нижнем регистре");
+        } else {
+            System.out.println("Строка в разных регистрах: " + getInput());
+        }
+    }
 
 
 
