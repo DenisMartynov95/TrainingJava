@@ -5,10 +5,7 @@ import BigTask2.Programmer;
 import BigTask2.Teacher;
 import BigTask2.Worker;
 import BigTask3.SeasonsClass;
-import Tasks.Books;
-import Tasks.Product;
-import Tasks.Task2;
-import Tasks.Task3;
+import Tasks.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -87,13 +84,16 @@ public class Main {
 //
 //        }
 
-        SeasonsClass seasonsClass = new SeasonsClass();
-        seasonsClass.printMonths();
-        seasonsClass.printTotalNumbers();
+//        SeasonsClass seasonsClass = new SeasonsClass();
+//        seasonsClass.printMonths();
+//        seasonsClass.printTotalNumbers();
 //        seasonsClass.changeToLowCase();
-        seasonsClass.changeToLowerCase();
-        seasonsClass.printListOfEnumClass();
-        seasonsClass.changeToLowerCaseListEnum();
+//        seasonsClass.changeToLowerCase();
+//        seasonsClass.printListOfEnumClass();
+//        seasonsClass.changeToLowerCaseListEnum();
+
+        Strings strings = new Strings();
+        strings.countStrSymbols();
 
     }
 }
