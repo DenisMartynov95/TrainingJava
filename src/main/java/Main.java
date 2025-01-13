@@ -88,5 +88,6 @@ public class Main {
         Strings strings = new Strings();
         strings.countStrSymbols();
         strings.isStringEmpty();
+        strings.task1();
     }
 }

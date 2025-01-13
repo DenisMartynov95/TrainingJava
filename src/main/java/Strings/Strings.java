@@ -6,23 +6,37 @@ public class Strings {
     // Изучение методов у строк
     Scanner scanner = new Scanner(System.in);
 
+    // Внедрил один инпут для всех методов, вывел его из методов в сам класс
+    private String input;
 
+    public String getInput() {
+        return input;
+    }
+
+    public void setInput(String input) {
+        this.input = input;
+    }
+
+    // Метод для заполнения строки input он простроен в самом классе, а не как внешний метод!
+    // Все последующие методы обращаются к нему
+    public void fillInput() {
+        System.out.println("Введите строку: " );
+    setInput(scanner.nextLine());
+    }
 
     //Посчитать кол-во символов
     public void countStrSymbols() {
-        String str = scanner.nextLine();
-        System.out.println("В этой строке: " + str.length() + " символов!");
+        fillInput();
+        System.out.println("В этой строке: " + getInput().length() + " символов!");
     }
-
-
 
     //Проверяю пустая ли введенная строка
     public void isStringEmpty() {
-        String input = scanner.nextLine();
-        if (input.isEmpty()) {
+        fillInput();
+        if (getInput().isEmpty()) {
             System.out.println("Строка пустая!");
         } else {
-            System.out.println(input);
+            System.out.println(getInput());
         }
     }
 
@@ -34,8 +48,17 @@ public class Strings {
     //Если состоит только из пробелов, верни строку «Строка состоит из одних пробелов».
     //Во всех остальных случаях верни строку «Строка содержит символы, кроме пробелов».
     public void task1() {
-
+        fillInput();
+        if (input.isEmpty()) {
+            System.out.println("Строка пустая");
+        } else if (input.isBlank()) {
+            System.out.println("Строка состоит из пробелом");
+        } else {
+            System.out.println("Строка содержит символы - вот строка: " + getInput());
+        }
     }
+
+
 
 
 
