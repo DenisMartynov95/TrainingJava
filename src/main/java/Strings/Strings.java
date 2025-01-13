@@ -20,8 +20,8 @@ public class Strings {
     // Метод для заполнения строки input он простроен в самом классе, а не как внешний метод!
     // Все последующие методы обращаются к нему
     public void fillInput() {
-        System.out.println("Введите строку: " );
-    setInput(scanner.nextLine());
+        System.out.println("Введите строку: ");
+        setInput(scanner.nextLine());
     }
 
     //Посчитать кол-во символов
@@ -57,7 +57,6 @@ public class Strings {
         fillInput();
         System.out.println(getInput().toUpperCase());
     }
-
 
 
     /*
@@ -116,6 +115,38 @@ public class Strings {
         }
     }
 
+    //Когда программа распознаёт текст с картинки, могут появляться ошибки — например, лишние пробелы или пустые строки.
+    //Напиши метод, который:
+    //очищает строку от пробелов в начале и конце,
+    //выводит строку на экран.
+    //Метод не должен выводить на экран пустые строки.
+    public void task4() {
+        String[] parsedText = {
+                "                                               I                                                   ",
+                "           – Еh bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de ",
+                "            la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons",
+                "   la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités   ",
+                "        de cet Antichrist (ma parole, j’y crois) — je ne vous connais plus, vous n’êtes plus mon   ",
+                "          ami, vous n’êtes plus мой верный раб, comme vous dites[1]. Ну, здравствуйте,             ",
+                "здравствуйте. Je vois que je vous fais peur[2], садитесь и рассказывайте.                          ",
+                "",
+                "Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная               ",
+                "императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого                  ",
+                "приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила   ",
+                "(грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром     ",
+                "с красным лакеем, было написано без различия во всех:                                              ",
+                "                                                                                                   "
+        };
 
+        for (int i = 0; i < parsedText.length; i++) {
+            String str = parsedText[i];
 
+            if (str.isEmpty() && str.isBlank()) {
+                String trimmedStr = str.trim();
+                System.out.println(trimmedStr);
+            } else {
+                System.out.println("Строка не имеет пробелов вначале и в конце");
+            }
+        }
+    }
 }

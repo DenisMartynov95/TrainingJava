@@ -94,6 +94,7 @@ public class Main {
 
 //        strings.task1();
 //          strings.task2();
-        strings.task3();
+//        strings.task3();
+        strings.task4();
     }
 }
