@@ -76,6 +76,22 @@ public class Strings {
         System.out.println(str3.charAt(0));
     }
 
+    // Поиск подстрок с помощью contains, startWith, endWith = они возвращают либо true либо false
+    String str4 = "Раз, два, три";
+    public void searchString() {
+        System.out.println(str4.contains("Раз"));
+        System.out.println(str4.startsWith("Раз"));
+        System.out.println(str4.endsWith("три"));
+    }
+
+    // Выделяю подстроку из строки, например чтобы ее извлечь
+    String str5 = "Это тестовая строка!";
+    public void  selectString() {
+        // Выделенную строку от 0 символа до 7 я перемещаю в selected
+        String selected = str5.substring(0,7);
+        System.out.println(selected);
+    }
+
 
     /*
             Задачи для закрепления
@@ -174,17 +190,19 @@ public class Strings {
     //Нужно написать метод, который ищет книгу по частичному названию. Пусть он называется public boolean search(String name, String subName) {}.
     //Метод возвращает true, если строка содержит подстроку.
     String nameBook = "Война и мир";
-    public boolean task6() {
+    public void task6() {
         fillInput();
         // Вначале приведу имя книги и текст инпута в эквивалентные нерегистрозависимые строки
         String letLowCaseForInput = getInput().toLowerCase();
         String letLowCaseForNameBook = nameBook.toLowerCase();
 
         if (letLowCaseForNameBook.lastIndexOf(letLowCaseForInput) > 0) {
-            return true;
+            System.out.println("Книга найдена");
+        } else {
+            System.out.println("Книга не найдена");
         }
-        return false;
     }
+
 
 
 

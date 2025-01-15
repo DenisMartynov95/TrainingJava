@@ -94,13 +94,15 @@ public class Main {
 //        strings.searchIndexOfString();
 //        strings.invertSearchIndexOfString();
 //        strings.printCharOfIndex();
+//        strings.searchString();
+        strings.selectString();
 
 //        strings.task1();
 //          strings.task2();
 //        strings.task3();
 //        strings.task4();
 //        strings.task5();
-        strings.task6();
+//        strings.task6();
 
 
     }
