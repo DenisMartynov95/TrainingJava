@@ -142,12 +142,17 @@ public class Strings {
             String str = parsedText[i];
             String trimmedString = str.trim();
             System.out.println(trimmedString);
-//            if (str.isEmpty() && str.isBlank()) {
-//                String trimmedStr = str.trim();
-//                System.out.println(trimmedStr);
-//            } else {
-//                System.out.println("Строка не имеет пробелов вначале и в конце");
-//            }
         }
     }
+
+    // Когда оплачиваешь покупку банковской картой через интернет, нужно ввести имя держателя карты.
+    //Имя на карте написано заглавными буквами, а пользователь может ввести его любыми. Напиши метод, который переводит имя в верхний регистр — то есть делает все буквы заглавными.
+    public void task5() {
+        fillInput();
+        System.out.println(input.toUpperCase());
+
+    }
+
+
+
 }
