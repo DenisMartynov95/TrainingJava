@@ -140,13 +140,14 @@ public class Strings {
 
         for (int i = 0; i < parsedText.length; i++) {
             String str = parsedText[i];
-
-            if (str.isEmpty() && str.isBlank()) {
-                String trimmedStr = str.trim();
-                System.out.println(trimmedStr);
-            } else {
-                System.out.println("Строка не имеет пробелов вначале и в конце");
-            }
+            String trimmedString = str.trim();
+            System.out.println(trimmedString);
+//            if (str.isEmpty() && str.isBlank()) {
+//                String trimmedStr = str.trim();
+//                System.out.println(trimmedStr);
+//            } else {
+//                System.out.println("Строка не имеет пробелов вначале и в конце");
+//            }
         }
     }
 }
