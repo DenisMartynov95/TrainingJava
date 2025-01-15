@@ -91,10 +91,16 @@ public class Main {
 //        strings.trimSpaces();
 //        strings.setUpperCase();
 //        strings.setLowCase();
+//        strings.searchIndexOfString();
+//        strings.invertSearchIndexOfString();
+//        strings.printCharOfIndex();
 
 //        strings.task1();
 //          strings.task2();
 //        strings.task3();
-        strings.task4();
+//        strings.task4();
+//        strings.task5();
+
+
     }
 }

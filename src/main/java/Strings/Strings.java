@@ -58,6 +58,24 @@ public class Strings {
         System.out.println(getInput().toUpperCase());
     }
 
+    // Ищу индекс подстроки
+    String str  = "Test word";
+    public void searchIndexOfString() {
+        System.out.println(str.indexOf("t"));
+    }
+
+    // Ищу индекс подстроки справа налево
+    String str2 = "Test";
+    public void invertSearchIndexOfString() {
+        System.out.println(str2.lastIndexOf("e"));
+    }
+
+    // Вывожу символ введенного индекса
+    String str3 = "Java";
+    public void printCharOfIndex() {
+        System.out.println(str3.charAt(0));
+    }
+
 
     /*
             Задачи для закрепления
@@ -150,6 +168,12 @@ public class Strings {
     public void task5() {
         fillInput();
         System.out.println(input.toUpperCase());
+    }
+
+    //Когда ищешь данные в библиотеке, неудобно вводить название книги полностью. Иногда полное название и вовсе неизвестно.
+    //Нужно написать метод, который ищет книгу по частичному названию. Пусть он называется public boolean search(String name, String subName) {}.
+    //Метод возвращает true, если строка содержит подстроку.
+    public  boolean task6() {
 
     }
 
