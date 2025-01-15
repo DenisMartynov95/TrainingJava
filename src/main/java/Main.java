@@ -100,6 +100,7 @@ public class Main {
 //        strings.task3();
 //        strings.task4();
 //        strings.task5();
+        strings.task6();
 
 
     }

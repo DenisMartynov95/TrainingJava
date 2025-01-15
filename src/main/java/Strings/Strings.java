@@ -173,8 +173,17 @@ public class Strings {
     //Когда ищешь данные в библиотеке, неудобно вводить название книги полностью. Иногда полное название и вовсе неизвестно.
     //Нужно написать метод, который ищет книгу по частичному названию. Пусть он называется public boolean search(String name, String subName) {}.
     //Метод возвращает true, если строка содержит подстроку.
-    public  boolean task6() {
+    String nameBook = "Война и мир";
+    public boolean task6() {
+        fillInput();
+        // Вначале приведу имя книги и текст инпута в эквивалентные нерегистрозависимые строки
+        String letLowCaseForInput = getInput().toLowerCase();
+        String letLowCaseForNameBook = nameBook.toLowerCase();
 
+        if (letLowCaseForNameBook.lastIndexOf(letLowCaseForInput) > 0) {
+            return true;
+        }
+        return false;
     }
 
 
