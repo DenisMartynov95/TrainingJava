@@ -203,7 +203,31 @@ public class Strings {
         }
     }
 
+    //В соцсетях запрещено показывать номер телефона без согласия пользователя. Поэтому строку 81234567890 заменяют на строку 8******7890.
+    //Напиши метод. Он принимает строку с номером мобильного телефона. Номер может начинаться с +7 или с 8.
+    //Метод оставляет в строке:
+    //два первых символа, если номер начинается с +7;
+    //один символ, если с 8;
+    //последние 4 символа для всех номеров.
+    //Остальные символы метод заменяет на *.
+    //Для строк +7(123)4567890 и 8(123)4567890 метод должен вернуть +7******7890 или 8******7890.
 
+    public void task7() {
+        String inputNumber = scanner.nextLine();
+        String mask = "****";
+        if (inputNumber.startsWith("+7") && inputNumber.length() > 13) {
+            // Напрямую меняю и применяю маску
+            String maskedPhone = inputNumber.substring(0,2) + mask + inputNumber.substring(7) ;
+            System.out.println(maskedPhone);
+        } else if (inputNumber.startsWith("8") && inputNumber.length() > 11) {
+            // Напрямую меняю и применяю маску
+            String maskedPhone = inputNumber.substring(0,1) + mask + inputNumber.substring(6);
+            System.out.println(maskedPhone);
+        } else if (inputNumber.isEmpty() || inputNumber.isBlank()) {
+            System.out.println("Введите ЦИФРЫ");
+        } else if (!inputNumber.matches("^[0-9]+$")) {
+            System.out.println("Ты дурачок? Введи ЦИФРЫ,а не буквы");
+        }
+    }
 
-
-}
+    }

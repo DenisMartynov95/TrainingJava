@@ -95,7 +95,7 @@ public class Main {
 //        strings.invertSearchIndexOfString();
 //        strings.printCharOfIndex();
 //        strings.searchString();
-        strings.selectString();
+//        strings.selectString();
 
 //        strings.task1();
 //          strings.task2();
@@ -103,6 +103,7 @@ public class Main {
 //        strings.task4();
 //        strings.task5();
 //        strings.task6();
+        strings.task7();
 
 
     }
