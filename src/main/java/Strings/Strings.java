@@ -26,7 +26,8 @@ public class Strings {
 
     //Посчитать кол-во символов
     public void countStrSymbols() {
-        fillInput();
+        fillInput(); // Этот метод у всех методов одинаковый - он принимает на вход input.scanner
+        // А затем все что было введено пользователем - перекладывает в переменную input, к которой получают доступ getInput()
         System.out.println("В этой строке: " + getInput().length() + " символов!");
     }
 
@@ -229,5 +230,7 @@ public class Strings {
             System.out.println("Ты дурачок? Введи ЦИФРЫ,а не буквы");
         }
     }
+
+
 
     }
