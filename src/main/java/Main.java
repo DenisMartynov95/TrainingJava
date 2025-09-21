@@ -1,5 +1,5 @@
-import Training1Cycles.SwitchCase1;
-import Training1Cycles.ifElse;
+import Training1.ArrayListTraining1;
+import Training1.SwitchCase1;
 
 public class Main {
     public static void main(String[] args) {
@@ -109,11 +109,13 @@ public class Main {
 //        ifElse cyclesTraining = new ifElse();
 //        cyclesTraining.setNumber();
 //        cyclesTraining.checkNumber();
-        SwitchCase1 switchCase1 = new SwitchCase1();
-        switchCase1.setFirst();
-        switchCase1.setSecond();
-        switchCase1.setSymbol();
-        switchCase1.letsCalc();
-
+//        SwitchCase1 switchCase1 = new SwitchCase1();
+//        switchCase1.setFirst();
+//        switchCase1.setSecond();
+//        switchCase1.setSymbol();
+//        switchCase1.letsCalc();
+        ArrayListTraining1 arrayListTraining1 = new ArrayListTraining1();
+        arrayListTraining1.showList();
+        arrayListTraining1.deleteCity();
     }
 }

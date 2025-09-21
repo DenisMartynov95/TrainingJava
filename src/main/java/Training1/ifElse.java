@@ -1,4 +1,4 @@
-package Training1Cycles;
+package Training1;
 
 import java.util.Scanner;
 
