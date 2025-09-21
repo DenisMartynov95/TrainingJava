@@ -1,4 +1,5 @@
-import Strings.Strings;
+import Training1Cycles.SwitchCase1;
+import Training1Cycles.ifElse;
 
 public class Main {
     public static void main(String[] args) {
@@ -85,7 +86,7 @@ public class Main {
 //        seasonsClass.printListOfEnumClass();
 //        seasonsClass.changeToLowerCaseListEnum();
 
-        Strings strings = new Strings();
+//        Strings strings = new Strings();
 //        strings.countStrSymbols();
 //        strings.isStringEmpty();
 //        strings.trimSpaces();
@@ -101,10 +102,18 @@ public class Main {
 //          strings.task2();
 //        strings.task3();
 //        strings.task4();
-//        strings.task5();
-//        strings.task6();
-        strings.task7();
-
+//       strings.task5();
+//      strings.task6();
+///       strings.task7();
+//
+//        ifElse cyclesTraining = new ifElse();
+//        cyclesTraining.setNumber();
+//        cyclesTraining.checkNumber();
+        SwitchCase1 switchCase1 = new SwitchCase1();
+        switchCase1.setFirst();
+        switchCase1.setSecond();
+        switchCase1.setSymbol();
+        switchCase1.letsCalc();
 
     }
 }
