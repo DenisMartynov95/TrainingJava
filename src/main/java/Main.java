@@ -1,5 +1,6 @@
 import Training1.ArrayListTraining1;
 import Training1.ListTraining2;
+import Training1.ProductsManager;
 import Training1.SwitchCase1;
 
 public class Main {
@@ -118,9 +119,16 @@ public class Main {
 //        ArrayListTraining1 arrayListTraining1 = new ArrayListTraining1();
 //        arrayListTraining1.showList();
 //        arrayListTraining1.deleteCity();
-        ListTraining2 listTraining2 = new ListTraining2();
-        listTraining2.printUsers();
-        listTraining2.findUser("Olga");
-        listTraining2.addName();
+//        ListTraining2 listTraining2 = new ListTraining2();
+//        listTraining2.printUsers();
+//        listTraining2.findUser("Olga");
+//        listTraining2.addName();
+        ProductsManager productsManager = new ProductsManager();
+        productsManager.addProducts("Грибы");
+        productsManager.addProducts("Мясо");
+        productsManager.addProducts("Картофель");
+        productsManager.removeProduct();
+        productsManager.clearAllList();
+
     }
 }
