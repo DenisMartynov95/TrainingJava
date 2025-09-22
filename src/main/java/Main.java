@@ -1,4 +1,5 @@
 import Training1.ArrayListTraining1;
+import Training1.ListTraining2;
 import Training1.SwitchCase1;
 
 public class Main {
@@ -114,8 +115,12 @@ public class Main {
 //        switchCase1.setSecond();
 //        switchCase1.setSymbol();
 //        switchCase1.letsCalc();
-        ArrayListTraining1 arrayListTraining1 = new ArrayListTraining1();
-        arrayListTraining1.showList();
-        arrayListTraining1.deleteCity();
+//        ArrayListTraining1 arrayListTraining1 = new ArrayListTraining1();
+//        arrayListTraining1.showList();
+//        arrayListTraining1.deleteCity();
+        ListTraining2 listTraining2 = new ListTraining2();
+        listTraining2.printUsers();
+        listTraining2.findUser("Olga");
+        listTraining2.addName();
     }
 }
