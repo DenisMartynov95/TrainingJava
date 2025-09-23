@@ -126,8 +126,14 @@ public class Main {
 //        productsManager.addProducts("Картофель");
 //        productsManager.removeProduct();
 //        productsManager.clearAllList();
-        MapTraining1 mapTraining1 = new MapTraining1();
-        mapTraining1.findPhoneNumber("Olga");
-        mapTraining1.deleteOne("Olga");
+//        MapTraining1 mapTraining1 = new MapTraining1();
+//        mapTraining1.findPhoneNumber("Olga");
+//        mapTraining1.deleteOne("Olga");
+
+        MapTraining2 mapTraining2 = new MapTraining2();
+        mapTraining2.splitTextLine();
+        mapTraining2.print();
+
     }
+
 }
