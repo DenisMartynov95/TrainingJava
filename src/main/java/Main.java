@@ -132,7 +132,10 @@ public class Main {
 
         MapTraining2 mapTraining2 = new MapTraining2();
         mapTraining2.splitTextLine();
-        mapTraining2.print();
+//        mapTraining2.print();
+        mapTraining2.putArrayToMap();
+        mapTraining2.countRepeats();
+
 
     }
 
