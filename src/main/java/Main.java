@@ -1,7 +1,4 @@
-import Training1.ArrayListTraining1;
-import Training1.ListTraining2;
-import Training1.ProductsManager;
-import Training1.SwitchCase1;
+import Training1.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -123,12 +120,14 @@ public class Main {
 //        listTraining2.printUsers();
 //        listTraining2.findUser("Olga");
 //        listTraining2.addName();
-        ProductsManager productsManager = new ProductsManager();
-        productsManager.addProducts("Грибы");
-        productsManager.addProducts("Мясо");
-        productsManager.addProducts("Картофель");
-        productsManager.removeProduct();
-        productsManager.clearAllList();
-
+//        ProductsManager productsManager = new ProductsManager();
+//        productsManager.addProducts("Грибы");
+//        productsManager.addProducts("Мясо");
+//        productsManager.addProducts("Картофель");
+//        productsManager.removeProduct();
+//        productsManager.clearAllList();
+        MapTraining1 mapTraining1 = new MapTraining1();
+        mapTraining1.findPhoneNumber("Olga");
+        mapTraining1.deleteOne("Olga");
     }
 }
