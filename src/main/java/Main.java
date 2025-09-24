@@ -1,5 +1,7 @@
+import OOPTraining.Counter;
 import OOPTraining.Person;
 import OOPTraining.Product;
+import OOPTraining.User;
 import Training1.*;
 
 public class Main {
@@ -141,9 +143,21 @@ public class Main {
 //        System.out.println("Возраст: " + person.getAge() + "Имя: " + person.getName());
 //        person.setAge((byte) -1);
 
-        Product product = new Product();
-        product.setPrice(-100);
-        System.out.println(product.getPrice());
+//        Product product = new Product();
+//        product.setPrice(-100);
+//        System.out.println(product.getPrice());
+
+//        User user = new User("Denis", "QWERTY");
+//        user.checkPass();
+
+        Counter counter = new Counter();
+        counter.increment();
+        counter.increment();
+        counter.decrement();
+
+
+
+
     }
 
 }

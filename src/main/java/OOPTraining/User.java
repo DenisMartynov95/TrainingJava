@@ -1,5 +1,7 @@
 package OOPTraining;
 
+import java.util.Scanner;
+
 public class User {
     /*
     ❓ Задача 1. Класс User
@@ -24,4 +26,26 @@ public class User {
         this.login = login;
         this.password = password;
     }
+    public String getLogin() {
+        return login;
+    }
+    public void setLogin(String login) {
+        this.login = login;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void checkPass() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите пароль: ");
+        String input = scanner.next();
+        if (input.equals(password)) {
+            System.out.println("true");
+        }
+        System.out.println("false");
+    }
+
+
+
 }
