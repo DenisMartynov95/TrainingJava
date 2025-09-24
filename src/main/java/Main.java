@@ -1,4 +1,5 @@
 import OOPTraining.Counter;
+import OOPTraining.Inheritance.*;
 import OOPTraining.Person;
 import OOPTraining.Product;
 import OOPTraining.User;
@@ -150,10 +151,15 @@ public class Main {
 //        User user = new User("Denis", "QWERTY");
 //        user.checkPass();
 
-        Counter counter = new Counter();
-        counter.increment();
-        counter.increment();
-        counter.decrement();
+//        Counter counter = new Counter();
+//        counter.increment();
+//        counter.increment();
+//        counter.decrement();
+
+        Zoo zoo = new Zoo();
+        zoo.addAnimal(Dog, Cat, Eagle, Snake);
+        zoo.showAll();
+        zoo.makeAllSounds();
 
 
 
