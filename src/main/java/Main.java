@@ -1,3 +1,5 @@
+import OOPTraining.Person;
+import OOPTraining.Product;
 import Training1.*;
 
 public class Main {
@@ -130,13 +132,18 @@ public class Main {
 //        mapTraining1.findPhoneNumber("Olga");
 //        mapTraining1.deleteOne("Olga");
 
-        MapTraining2 mapTraining2 = new MapTraining2();
-        mapTraining2.splitTextLine();
+//        MapTraining2 mapTraining2 = new MapTraining2();
+//        mapTraining2.splitTextLine();
 //        mapTraining2.print();
-        mapTraining2.putArrayToMap();
-        mapTraining2.countRepeats();
+//        mapTraining2.putArrayToMap();
+//        mapTraining2.countRepeats();
+//        Person person = new Person("Denis", (byte) 10);
+//        System.out.println("Возраст: " + person.getAge() + "Имя: " + person.getName());
+//        person.setAge((byte) -1);
 
-
+        Product product = new Product();
+        product.setPrice(-100);
+        System.out.println(product.getPrice());
     }
 
 }
