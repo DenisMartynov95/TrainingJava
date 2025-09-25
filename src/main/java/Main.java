@@ -1,9 +1,8 @@
-import OOPTraining.Inheritance.Core.Animal;
-import OOPTraining.Inheritance.Core.Parents.Childs.Cat;
-import OOPTraining.Inheritance.Core.Parents.Childs.Dog;
-import OOPTraining.Inheritance.Core.Parents.Childs.Eagle;
-import OOPTraining.Inheritance.Core.Parents.Childs.Snake;
-import OOPTraining.Inheritance.Core.Zoo;
+import OOPTraining.InheritanceTask.Core.Parents.Childs.Cat;
+import OOPTraining.InheritanceTask.Core.Parents.Childs.Dog;
+import OOPTraining.InheritanceTask.Core.Parents.Childs.Eagle;
+import OOPTraining.InheritanceTask.Core.Parents.Childs.Snake;
+import OOPTraining.InheritanceTask.Core.Zoo;
 
 public class Main {
     public static void main(String[] args) {

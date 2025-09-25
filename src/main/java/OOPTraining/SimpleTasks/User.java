@@ -1,4 +1,4 @@
-package OOPTraining;
+package OOPTraining.SimpleTasks;
 
 import java.util.Scanner;
 

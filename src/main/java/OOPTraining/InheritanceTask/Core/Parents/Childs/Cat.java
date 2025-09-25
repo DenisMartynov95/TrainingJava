@@ -1,6 +1,6 @@
-package OOPTraining.Inheritance.Core.Parents.Childs;
+package OOPTraining.InheritanceTask.Core.Parents.Childs;
 
-import OOPTraining.Inheritance.Core.Parents.Mammal;
+import OOPTraining.InheritanceTask.Core.Parents.Mammal;
 
 public class Cat extends Mammal {
 

@@ -1,6 +1,6 @@
-package OOPTraining.Inheritance.Core.Parents;
+package OOPTraining.InheritanceTask.Core.Parents;
 
-import OOPTraining.Inheritance.Core.Animal;
+import OOPTraining.InheritanceTask.Core.Animal;
 
 public class Bird extends Animal {
 

@@ -1,4 +1,4 @@
-package OOPTraining.Inheritance.Core;
+package OOPTraining.InheritanceTask.Core;
 
 import java.util.ArrayList;
 import java.util.List;

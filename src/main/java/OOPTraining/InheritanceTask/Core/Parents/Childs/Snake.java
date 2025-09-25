@@ -1,7 +1,6 @@
-package OOPTraining.Inheritance.Core.Parents.Childs;
+package OOPTraining.InheritanceTask.Core.Parents.Childs;
 
-import OOPTraining.Inheritance.Core.Animal;
-import OOPTraining.Inheritance.Core.Parents.Reptile;
+import OOPTraining.InheritanceTask.Core.Animal;
 
 public class Snake extends Animal {
 
