@@ -1,9 +1,9 @@
-import OOPTraining.Counter;
-import OOPTraining.Inheritance.*;
-import OOPTraining.Person;
-import OOPTraining.Product;
-import OOPTraining.User;
-import Training1.*;
+import OOPTraining.Inheritance.Core.Animal;
+import OOPTraining.Inheritance.Core.Parents.Childs.Cat;
+import OOPTraining.Inheritance.Core.Parents.Childs.Dog;
+import OOPTraining.Inheritance.Core.Parents.Childs.Eagle;
+import OOPTraining.Inheritance.Core.Parents.Childs.Snake;
+import OOPTraining.Inheritance.Core.Zoo;
 
 public class Main {
     public static void main(String[] args) {
@@ -157,7 +157,11 @@ public class Main {
 //        counter.decrement();
 
         Zoo zoo = new Zoo();
-        zoo.addAnimal(Dog, Cat, Eagle, Snake);
+        zoo.addAnimal(new Dog("Шарик",3));
+        zoo.addAnimal(new Cat("Мурка",2));
+        zoo.addAnimal(new Eagle("Орел",5));
+        zoo.addAnimal(new Snake("Каа",4));
+
         zoo.showAll();
         zoo.makeAllSounds();
 
