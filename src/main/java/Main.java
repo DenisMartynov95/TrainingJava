@@ -3,6 +3,9 @@ import OOPTraining.InheritanceTask.Core.Parents.Childs.Dog;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Eagle;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Snake;
 import OOPTraining.InheritanceTask.Core.Zoo;
+import OOPTraining.LibraryTask.Core.Book;
+import OOPTraining.LibraryTask.Core.Childs.Ebook;
+import OOPTraining.LibraryTask.Core.Childs.PrintedBook;
 
 public class Main {
     public static void main(String[] args) {
@@ -155,15 +158,16 @@ public class Main {
 //        counter.increment();
 //        counter.decrement();
 
-        Zoo zoo = new Zoo();
-        zoo.addAnimal(new Dog("Шарик",3));
-        zoo.addAnimal(new Cat("Мурка",2));
-        zoo.addAnimal(new Eagle("Орел",5));
-        zoo.addAnimal(new Snake("Каа",4));
+//        Zoo zoo = new Zoo();
+//        zoo.addAnimal(new Dog("Шарик",3));
+//        zoo.addAnimal(new Cat("Мурка",2));
+//        zoo.addAnimal(new Eagle("Орел",5));
+//        zoo.addAnimal(new Snake("Каа",4));
+//
+//        zoo.showAll();
+//        zoo.makeAllSounds();
 
-        zoo.showAll();
-        zoo.makeAllSounds();
-
+        Ebook[] ebooks = new Book[]{""}
 
 
 
