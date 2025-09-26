@@ -195,6 +195,7 @@ public class Main {
         creditAccount.withdraw(100);
         creditAccount.withdraw(1000);
         creditAccount.withdraw(1000);
+        creditAccount.deposit(10000);
 
 
 
