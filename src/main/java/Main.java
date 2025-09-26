@@ -1,3 +1,6 @@
+import OOPTraining.Bank.Core.Account;
+import OOPTraining.Bank.Core.Childs.CreditAccount;
+import OOPTraining.Bank.Core.Childs.SavingsAccount;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Cat;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Dog;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Eagle;
@@ -185,7 +188,13 @@ public class Main {
 //        System.out.println(printedBooks[0].getPages());
 
 
-
+//        SavingsAccount savingsAccount = new SavingsAccount(1000);
+//        savingsAccount.withdraw(100);
+        CreditAccount creditAccount = new CreditAccount(200);
+        creditAccount.withdraw(100);
+        creditAccount.withdraw(100);
+        creditAccount.withdraw(1000);
+        creditAccount.withdraw(1000);
 
 
 
