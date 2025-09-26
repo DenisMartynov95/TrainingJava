@@ -167,7 +167,26 @@ public class Main {
 //        zoo.showAll();
 //        zoo.makeAllSounds();
 
-        Ebook[] ebooks = new Book[]{""}
+
+//        Ebook[] electronBooks = new Ebook[]{
+//                new Ebook("Ыгаха", "Мартынов", 135.84F),
+//                new Ebook("Абываха", "Куртудтинов",345.54F)
+//        };
+//
+//        PrintedBook[] printedBooks = new PrintedBook[]{
+//                new PrintedBook("Преступление и наказание","Достоевский",560),
+//                new PrintedBook("наказание","ДостоЫВСКий",520)
+//        };
+//
+//        System.out.println(electronBooks[0].info());
+//        electronBooks[1].download();
+//
+//        printedBooks[1].readPage(45);
+//        System.out.println(printedBooks[0].getPages());
+
+
+
+
 
 
 
