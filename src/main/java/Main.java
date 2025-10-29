@@ -1,3 +1,4 @@
+import Day1.TwoSum;
 import OOPTraining.Bank.Core.Account;
 import OOPTraining.Bank.Core.Childs.CreditAccount;
 import OOPTraining.Bank.Core.Childs.SavingsAccount;
@@ -190,12 +191,18 @@ public class Main {
 
 //        SavingsAccount savingsAccount = new SavingsAccount(1000);
 //        savingsAccount.withdraw(100);
-        CreditAccount creditAccount = new CreditAccount(200);
-        creditAccount.withdraw(100);
-        creditAccount.withdraw(100);
-        creditAccount.withdraw(1000);
-        creditAccount.withdraw(1000);
-        creditAccount.deposit(10000);
+//        CreditAccount creditAccount = new CreditAccount(200);
+//        creditAccount.withdraw(100);
+//        creditAccount.withdraw(100);
+//        creditAccount.withdraw(1000);
+//        creditAccount.withdraw(1000);
+//        creditAccount.deposit(10000);
+
+
+        TwoSum twoSum = new TwoSum();
+        twoSum.printNumber();
+        twoSum.returnElements();
+
 
 
 
