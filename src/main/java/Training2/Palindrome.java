@@ -25,9 +25,9 @@ public class Palindrome {
 
         // А теперь я сравниваю реверснутую строку с имеющейся строкой
         if (reversedText.equals(getNewText())) {
-            System.out.println("Строка - не является палиндромом");
-        } else {
             System.out.println("Строка - Палиндром!");
+        } else {
+            System.out.println("Строка - не является палиндромом");
         }
     }
 
