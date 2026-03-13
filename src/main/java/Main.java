@@ -206,8 +206,6 @@ public class Main {
 
 
         Palindrome palindrome = new Palindrome();
-        palindrome.deleteSpaces();
-        palindrome.reverseText();
         palindrome.checkPalindrome();
 
 
