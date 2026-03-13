@@ -10,6 +10,7 @@ import OOPTraining.InheritanceTask.Core.Zoo;
 import OOPTraining.LibraryTask.Core.Book;
 import OOPTraining.LibraryTask.Core.Childs.Ebook;
 import OOPTraining.LibraryTask.Core.Childs.PrintedBook;
+import Training2.Palindrome;
 
 public class Main {
     public static void main(String[] args) {
@@ -199,11 +200,15 @@ public class Main {
 //        creditAccount.deposit(10000);
 
 
-        TwoSum twoSum = new TwoSum();
-        twoSum.printNumber();
-        twoSum.returnElements();
+//        TwoSum twoSum = new TwoSum();
+//        twoSum.printNumber();
+//        twoSum.returnElements();
 
 
+        Palindrome palindrome = new Palindrome();
+        palindrome.deleteSpaces();
+        palindrome.reverseText();
+        palindrome.checkPalindrome();
 
 
 

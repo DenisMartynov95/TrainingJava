@@ -27,26 +27,18 @@ public class TwoSum {
     }
 
     public void returnElements() {
-        System.out.println(target);
-
-
         do {
-            sum = numbers[random.nextInt(10) + random.nextInt(10)];
-            System.out.println("Cумма перебора = " + sum);
-        }
-        while (sum == target) {
-            int pastNumber = numbers[i];
-            if (numbers[i] + pastNumber == target) {
-                System.out.println(numbers[i] + pastNumber);
+            int number1 = random.nextInt(10);
+            int number2 = random.nextInt(10);
+            sum = number1 + number2;
+
+            if (sum == target) {
+                System.out.println("Cумма перебора = " + sum);
+                System.out.println(number1 + number2);
             }
+        } while (sum != target);
         }
-
-
-    }
-
-
-
-
 
 
 }
+
