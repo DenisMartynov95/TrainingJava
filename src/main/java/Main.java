@@ -10,6 +10,7 @@ import OOPTraining.InheritanceTask.Core.Zoo;
 import OOPTraining.LibraryTask.Core.Book;
 import OOPTraining.LibraryTask.Core.Childs.Ebook;
 import OOPTraining.LibraryTask.Core.Childs.PrintedBook;
+import Task1.Duplicate;
 import Training2.Palindrome;
 
 public class Main {
@@ -205,10 +206,11 @@ public class Main {
 //        twoSum.returnElements();
 
 
-        Palindrome palindrome = new Palindrome();
-        palindrome.checkPalindrome();
+//        Palindrome palindrome = new Palindrome();
+//        palindrome.checkPalindrome();
 
-
+        Duplicate duplicate = new Duplicate();
+        duplicate.checkDuplicate();
 
     }
 
