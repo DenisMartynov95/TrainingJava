@@ -216,10 +216,15 @@ public class Main {
         cat.setName("Барсик");
         System.out.println(cat.getName());
 
-        Cat.addNewCat();
-        Cat.addNewCat();
-        Cat.addNewCat();
-        System.out.println(Cat.getCatsCount());
+//        Cat.addNewCat();
+//        Cat.addNewCat();
+//        Cat.addNewCat();
+//        Cat.setCatsCount(5);
+//        System.out.println(Cat.getCatsCount());
+
+        cat.setName("Лютик", "Лютович");
+        System.out.println(cat.getFullName());
+
 
     }
 
