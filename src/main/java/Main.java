@@ -212,9 +212,9 @@ public class Main {
 //        Duplicate duplicate = new Duplicate();
 //        duplicate.checkDuplicate();
 
-        Cat cat = new Cat();
-        cat.setName("Барсик");
-        System.out.println(cat.getName());
+//        Cat cat = new Cat();
+//        cat.setName("Барсик");
+//        System.out.println(cat.getName());
 
 //        Cat.addNewCat();
 //        Cat.addNewCat();
@@ -222,8 +222,22 @@ public class Main {
 //        Cat.setCatsCount(5);
 //        System.out.println(Cat.getCatsCount());
 
-        cat.setName("Лютик", "Лютович");
-        System.out.println(cat.getFullName());
+//        cat.setName("Лютик", "Лютович");
+//        System.out.println(cat.getFullName());
+
+
+        /*
+         Написать код, который бы подсчитывал количество созданных котов (count) и на экран выдавалось правильно их количество.
+         */
+
+        Cat cat1 = new Cat("Swaryik");
+        Cat cat2 = new Cat("Lyba");
+        Cat cat3 = new Cat("Asd");
+        Cat cat4 = new Cat("FSD");
+        //написать тут ваш код
+        Cat.printCatsCount();
+
+
 
 
     }

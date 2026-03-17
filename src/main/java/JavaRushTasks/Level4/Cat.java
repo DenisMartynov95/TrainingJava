@@ -70,6 +70,24 @@ public class Cat {
             setFullName(fullName); // #2 Реализую решение
         }
 
+        /* РЕАЛИЗАЦИЯ В main!!!
+        Написать код, который бы подсчитывал количество созданных котов (count) и на экран выдавалось правильно их количество.
+         */
+        static int catsCnt = 0; //#1 создаю переменную статическую, нужно хранить данные
+
+        public Cat(String name) { //#2 конструктор для создания кошек
+            this.name = name;
+            sumCnt(); // #3 при вызове конструктора идет подсчет
+        }
+
+        public static void sumCnt() { //#3 метод СТАТИЧНЫЙ, чтобы не привязывать к объектам, а к КЛАССУ суммирования
+            catsCnt = catsCnt +1;
+        }
+
+        public static void printCatsCount() { //#4 принт так же СТАТИЧНЫЙ
+            System.out.println("Cats count is " +catsCnt);
+        }
+
 
 
 }
