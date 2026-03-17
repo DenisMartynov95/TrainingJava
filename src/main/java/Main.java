@@ -1,8 +1,8 @@
 import Day1.TwoSum;
+import JavaRushTasks.Level4.Cat;
 import OOPTraining.Bank.Core.Account;
 import OOPTraining.Bank.Core.Childs.CreditAccount;
 import OOPTraining.Bank.Core.Childs.SavingsAccount;
-import OOPTraining.InheritanceTask.Core.Parents.Childs.Cat;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Dog;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Eagle;
 import OOPTraining.InheritanceTask.Core.Parents.Childs.Snake;
@@ -209,8 +209,17 @@ public class Main {
 //        Palindrome palindrome = new Palindrome();
 //        palindrome.checkPalindrome();
 
-        Duplicate duplicate = new Duplicate();
-        duplicate.checkDuplicate();
+//        Duplicate duplicate = new Duplicate();
+//        duplicate.checkDuplicate();
+
+        Cat cat = new Cat();
+        cat.setName("Барсик");
+        System.out.println(cat.getName());
+
+        Cat.addNewCat();
+        Cat.addNewCat();
+        Cat.addNewCat();
+        System.out.println(Cat.getCatsCount());
 
     }
 
