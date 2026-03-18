@@ -4,10 +4,16 @@ import java.util.Scanner;
 
 public class Cycles {
 
-    /*
-    Ввести с клавиатуры два числа m и n.
-    Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
-     */
+            /*
+            Рисуем прямоугольник
+
+            Ввести с клавиатуры два числа m и n.
+            Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
+
+            Пример: m=2, n=4
+            8888
+            8888
+             */
 
     static Scanner scanner = new Scanner(System.in);
 
@@ -23,12 +29,13 @@ public class Cycles {
     }
 
     public void printFigure() {
-        for (int i = 0; i < m; i++) {
-            System.out.println("m");
-        }
         for (int i = 0; i < n; i++) {
-            System.out.println("n");
+            System.out.print("8");
         }
+        for (int i = 0; i < m; i++) {
+            System.out.println("8");
+        }
+
 
     }
 
