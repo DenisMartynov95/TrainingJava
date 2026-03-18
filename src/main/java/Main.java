@@ -1,5 +1,6 @@
 import Day1.TwoSum;
 import JavaRushTasks.Level4.Cat;
+import JavaRushTasks.Level4.Cycles;
 import OOPTraining.Bank.Core.Account;
 import OOPTraining.Bank.Core.Childs.CreditAccount;
 import OOPTraining.Bank.Core.Childs.SavingsAccount;
@@ -230,15 +231,17 @@ public class Main {
          Написать код, который бы подсчитывал количество созданных котов (count) и на экран выдавалось правильно их количество.
          */
 
-        Cat cat1 = new Cat("Swaryik");
-        Cat cat2 = new Cat("Lyba");
-        Cat cat3 = new Cat("Asd");
-        Cat cat4 = new Cat("FSD");
-        //написать тут ваш код
-        Cat.printCatsCount();
+//        Cat cat1 = new Cat("Swaryik");
+//        Cat cat2 = new Cat("Lyba");
+//        Cat cat3 = new Cat("Asd");
+//        Cat cat4 = new Cat("FSD");
+//        //написать тут ваш код
+//        Cat.printCatsCount();
 
 
-
+        Cycles.enterNumbers();
+        Cycles cycles = new Cycles();
+        cycles.printFigure();
 
     }
 
